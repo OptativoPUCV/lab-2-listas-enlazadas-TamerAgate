@@ -28,8 +28,18 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList() {
-     return NULL;
+List * createList() 
+{
+    List* nuevaLista = (List*)malloc(sizeof(List));
+
+    if (nuevaLista == NULL) return NULL;
+
+    nuevaLista->head = NULL;
+    nuevaLista->tail = NULL;
+    nuevaLista->current = NULL;
+    
+    return nuevaLista;
+
 }
 
 void * firstList(List * list) {

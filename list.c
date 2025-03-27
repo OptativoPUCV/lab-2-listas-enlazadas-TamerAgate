@@ -67,15 +67,16 @@ void * nextList(List * list)
 void * lastList(List * list) 
 {
     list->current = list->tail;
-    
+
     if(list->tail == NULL) return NULL;
 
     return list->tail->data;
 
-    return NULL;
 }
 
-void * prevList(List * list) {
+void * prevList(List * list) 
+{
+
     return NULL;
 }
 
